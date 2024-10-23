@@ -17,11 +17,11 @@ const tableData = [
     { eventName: "AI Innovations Forum", date: "2024-04-10", speaker: "Anna White", status: "cancelled" },
     { eventName: "Health and Wellness Expo", date: "2024-05-22", speaker: "John Black", status: "pending" },
     { eventName: "Sustainability in Business", date: "2024-06-12", speaker: "Chris Green", status: "completed" },
-    { eventName: "Creative Arts Festival", date: "2024-07-01", speaker: "David Lee", status: "cancelled" },
+    { eventName: "Creative Arts Festival", date: "2024-01-15", speaker: "David Lee", status: "cancelled" },
     { eventName: "Annual Sports Day", date: "2024-08-18", speaker: "Mark Taylor", status: "pending" },
     { eventName: "Digital Marketing Summit", date: "2024-09-04", speaker: "Alex Turner", status: "completed" },
     { eventName: "Cybersecurity Workshop", date: "2024-10-09", speaker: "Lucy Adams", status: "pending" },
-    { eventName: "Product Launch Event", date: "2024-11-15", speaker: "Tom Harris", status: "completed" },
+    { eventName: "Product Launch Event", date: "2024-05-10", speaker: "Tom Harris", status: "completed" },
     { eventName: "Annual Charity Gala", date: "2024-12-01", speaker: "Emma Wilson", status: "cancelled" },
     { eventName: "Tech Innovations Expo", date: "2024-01-20", speaker: "Sophia King", status: "pending" },
     { eventName: "Financial Planning Seminar", date: "2024-02-17", speaker: "James Lee", status: "completed" },
@@ -29,7 +29,7 @@ const tableData = [
     { eventName: "Photography Workshop", date: "2024-04-30", speaker: "Michael Scott", status: "completed" },
     { eventName: "Cooking Masterclass", date: "2024-05-10", speaker: "Rachel Green", status: "cancelled" },
     { eventName: "Travel and Tourism Expo", date: "2024-06-15", speaker: "Daniel Robinson", status: "pending" },
-    { eventName: "Health Tech Symposium", date: "2024-07-20", speaker: "Grace Lee", status: "completed" },
+    { eventName: "Health Tech Symposium", date: "2024-01-15", speaker: "Grace Lee", status: "completed" },
     { eventName: "Fashion and Design Workshop", date: "2024-08-25", speaker: "Chris Hemsworth", status: "cancelled" },
     { eventName: "Startup Pitch Night", date: "2024-09-30", speaker: "Emily Davis", status: "pending" },
     { eventName: "Environmental Awareness Program", date: "2024-10-22", speaker: "Liam White", status: "completed" },
@@ -329,10 +329,6 @@ function openModal(userName) {
   console.log("omo");
   const modal = document.getElementById("userModal");
   modal.classList.add("show");
-
-  // Set the user name or other details in the modal
-  const modalUserName = document.getElementById("modalUserName");
-  modalUserName.textContent = `Details for ${userName}`;
 }
 
 function closeModal() {

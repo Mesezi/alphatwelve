@@ -156,6 +156,10 @@ canvas {
     min-height: 100vh;
 }
 
+#collapse-btn{
+display: none;
+}
+
 .layout aside {
     height: 100vh;
     width: 100%;
@@ -169,10 +173,6 @@ canvas {
     color: var(--text-default);
     overflow: auto;
     transition: all ease-in-out 300ms;
-}
-
-.layout.layout.menu-collapsed.menu-open main {
-    margin-left: 60px;
 }
 
 .layout.menu-open aside {
@@ -287,7 +287,8 @@ canvas {
 
 
 .layout.menu-collapsed aside {
-    width: 60px;
+    display: none;
+    width: 60px
 }
 
 .layout.menu-collapsed main {
@@ -576,6 +577,11 @@ swiper-slide img {
     flex-wrap: wrap;
 }
 
+#filter-form input{
+background-color: rgb(0, 0, 0, 0);
+width: 100%;
+}
+
 
 
 #filter-form>div:nth-child(1) {
@@ -626,7 +632,7 @@ swiper-slide img {
     display: flex;
     align-items: center;
     color: var(--text-default);
-    gap: 1rem;
+    gap: .5rem;
     border: 1px solid var(--border-primary);
 }
 
@@ -1031,7 +1037,7 @@ swiper-slide img {
 }
 
 .layout.menu-collapsed + #dock{
-    display: none;
+    /* display: none; */
     }
     
 
@@ -1159,6 +1165,12 @@ swiper-slide img {
         margin-left: 60px;
     }
 
+    .layout.menu-collapsed aside {
+        display: block;
+        width: 60px
+    }
+    
+
     #myChart {
         width: 100% !important;
 
@@ -1240,6 +1252,10 @@ swiper-slide img {
             background-color: var(--status-cancelled-text);
         }
     }
+
+    #collapse-btn{
+        display: flex;
+        }
 
     #sidebar header button {
         display: none;
